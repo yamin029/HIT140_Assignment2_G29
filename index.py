@@ -1,7 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import scipy.stats as st
-import seaborn as sns
 
 # Step 1: Data Loading and Exploration:
 # Load the dataset
@@ -59,6 +58,7 @@ significance_level = 0.05
 
 # Select features with low p-values (below significance level)
 selected_features = [feature for feature, p_value in p_values.items() if p_value < significance_level]
+print(selected_features)
 
 # Zainab Fatima
 # Display selected features
