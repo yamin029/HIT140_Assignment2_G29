@@ -5,7 +5,7 @@ import seaborn as sns
 
 # Step 1: Data Loading and Exploration:
 # Load the dataset
-data_path = "/Users/yaminhossain/Desktop/CDU/Data_Science/Assignment2/po1_data.txt"
+data_path = "/Users/guldeep/Desktop/HIT140_Assignment2_G29/po1_data.txt"
 column_names = [
     "Subject_ID", "Jitter%", "Jitter_Abs", "Jitter_RAP", "Jitter_PPQ5",
     "Jitter_DDP", "Shimmer%", "Shimmer_Abs", "Shimmer_APQ3", "Shimmer_APQ5",
