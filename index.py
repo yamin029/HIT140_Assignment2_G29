@@ -17,11 +17,11 @@ column_names = [
 df = pd.read_csv(data_path, names=column_names)
 
 # Display the first few rows of the dataset
-# print(df.head())
+print(df.head())
 
-# # Step 2: Data Wrangling:
-# # Check for missing values
-# print(df.isnull().sum())
+# Step 2: Data Wrangling:
+# Check for missing values
+print(df.isnull().sum())
 
 # Step 3: Group Comparison:
 # Create separate DataFrames for PD patients and healthy individuals
@@ -39,6 +39,7 @@ healthy_stats = healthy_individuals.describe()
 print(pd_stats)
 print(healthy_stats)
 
+# Salma Fariha Eera
 # Step 5: Inferential Analysis:
 # Perform t-tests for each variable
 p_values = {}
@@ -51,6 +52,7 @@ for column in df.columns[1:-2]:
 # Display p-values
 print(p_values)
 
+# Guldeep 
 # Step 6: Feature Selection:
 # Set the significance level (alpha)
 significance_level = 0.05
@@ -58,6 +60,7 @@ significance_level = 0.05
 # Select features with low p-values (below significance level)
 selected_features = [feature for feature, p_value in p_values.items() if p_value < significance_level]
 
+# Zainab Fatima
 # Display selected features
 print("Selected features:", selected_features)
 for feature in selected_features:
