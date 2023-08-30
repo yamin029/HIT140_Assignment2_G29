@@ -17,7 +17,7 @@ column_names = [
 df = pd.read_csv(data_path, names=column_names)
 
 # Display the first few rows of the dataset
-# print(df.head())
+print(df.head())
 
 # # Step 2: Data Wrangling:
 # # Check for missing values
